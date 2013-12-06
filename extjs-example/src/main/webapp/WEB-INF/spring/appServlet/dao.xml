@@ -21,8 +21,8 @@
 	</bean>
 
 
-	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
-		<property name="location" value="classpath:/resources/mysql.properties"
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:/resources/mysql.properties">
 		</property>
 	</bean>
 
@@ -48,7 +48,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan">
 			<list>
-				<value>com.memisoglu.learning.model</value>
+				<value>com.memisoglu.extjs.model</value>
 			</list>
 		</property>
 
